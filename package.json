@@ -1,0 +1,25 @@
+{
+  "name": "minimedia",
+  "version": "1.0.0",
+  "description": "this is related to my real project",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "minisocialmedia"
+  },
+  "author": "pradip ku chaudhary",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.1",
+    "nodemon": "^3.1.11"
+  }
+}

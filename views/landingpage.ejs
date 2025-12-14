@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Social Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Top Navigation */
+        nav {
+            width: 100%;
+            padding: 15px 40px;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        nav a.logout {
+            text-decoration: none;
+            padding: 8px 16px;
+            background: #dc3545;
+            color: #fff;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a.logout:hover {
+            background: #c82333;
+        }
+
+        .container {
+            display: flex;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 900px;
+            width: 90%;
+            margin: 100px auto 40px auto; /* leave space for fixed nav */
+        }
+
+        .left {
+            background: url('https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?fit=crop&w=600&q=80') no-repeat center center/cover;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left h1 {
+            color: #fff;
+            font-size: 36px;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+
+        .right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #f9f9f9;
+        }
+
+        .right h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-login {
+            background: #28a745;
+        }
+
+        .btn-login:hover {
+            background: #218838;
+        }
+
+        .btn-register {
+            background: #007bff;
+        }
+
+        .btn-register:hover {
+            background: #0056b3;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                flex: unset;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav>
+        <h1>MiniSocial</h1>
+        <a href="/logout" class="logout">Logout</a>
+    </nav>
+
+    <div class="container">
+        <div class="left">
+            <h1>Connect with Friends & the World Around You</h1>
+        </div>
+        <div class="right">
+            <h2>Welcome Back!</h2>
+            <p>Join our social community and share your moments.</p>
+
+        </div>
+    </div>
+</body>
+</html>
